@@ -51,7 +51,7 @@ header {
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
 }
 
 .container-compress {
