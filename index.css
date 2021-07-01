@@ -49,9 +49,10 @@ header {
 
 .container {
   max-width: 1100px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
-  /* border: 1px solid magenta; */
+  border: 1px solid magenta;
+  padding: 2rem 0;
 }
 
 .container-compress {
@@ -61,6 +62,7 @@ header {
 
 .container-top,
 .container-next {
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -120,8 +122,8 @@ h3 {
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 550;
+  font-size: 2rem;
+  font-weight: 600;
   margin: 1em;
 }
 
@@ -143,7 +145,8 @@ nav a {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -160,8 +163,8 @@ nav a {
 
 .normal-heading {
   color: white;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -177,8 +180,8 @@ nav a {
 }
 
 .body-content {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 350;
 }
 
 /* 
@@ -231,6 +234,22 @@ header {
 .btn a:focus {
   background: black;
   color: white;
+  transition: all 0.3s linear;
+}
+
+/* Global Warming */
+
+.global-warming {
+  height: 80vh;
+}
+
+.global-warming .container {
+  padding-top: 12em;
+}
+
+.global-warming .body-content {
+  width: 70%;
+  margin: 2em auto;
 }
 
 /* what we do */
@@ -591,6 +610,24 @@ footer {
   padding: 1em;
 }
 
+/* Effect */
+
+.service-tile,
+.plan-tile,
+.blog-tile,
+.media-icon {
+  transition: all 0.3s linear;
+}
+
+.service-tile:hover,
+.plan-tile:hover,
+.blog-tile:hover,
+.media-icon:hover {
+  box-shadow: 0 10px 10px rgb(75, 74, 74), inset 0 -5px 10px grey;
+  transform: scale(1.05);
+  /* transform: rotate(-5deg); */
+}
+
 /* Queries */
 
 @media screen and (max-width: 675px) {
@@ -628,6 +665,7 @@ footer {
   .div-title {
     text-align: center;
   }
+
   .features .container-next {
     flex-direction: column;
   }
